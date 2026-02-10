@@ -1,0 +1,23 @@
+[project]
+name = "brscan-skey-gui"
+version = "0.1.0"
+description = "Configuration tool for Brother Scanners using BRScan-Skey"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pyside6>=6.10.2",
+]
+
+[project.scripts]
+brscan-skey-gui = "main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+only-include = ["src"]
+sources = ["src"]
+
+[tool.uv]
+package = true
