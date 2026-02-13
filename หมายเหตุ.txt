@@ -1,0 +1,43 @@
+# Debian 13 (Native System Integration 100%)
+## dependencies
+- python3-pyside6.qtcore 
+- python3-pyside6.qtwidgets
+## install
+- sudo apt install python3-pyside6.qtcore python3-pyside6.qtwidgets 
+
+
+# Arch / Manjaro (Native System Integration 100%)
+## dependencies
+- pyside6
+## install
+- sudo pacman -S pyside6
+
+
+# Fedora (Native System Integration 100%)
+## dependencies
+- python3-pyside6
+## install
+- sudo dnf install python3-pyside6
+
+
+
+# การรันแบบไม่ใช้ venv (Native System Integration 100%)
+เมื่อติดตั้ง dependencies ของระบบแล้ว สามารถรันได้โดยตรงผ่าน Python ของเครื่อง:
+1. เปิด Terminal ในโฟลเดอร์โปรเจกต์
+2. สั่งรัน:
+   python src/main.py
+
+
+
+# Ubuntu 24.04 (Noble Numbat)
+## Issue
+- Package 'python3-pyside6' is missing from official repositories (Universe).
+## Solution
+- Must use pip within a virtual environment or use uv.
+## install
+1. Install pip and venv:
+   sudo apt install python3-pip python3-venv
+2. Create venv and install:
+   python3 -m venv .venv
+   source .venv/bin/activate
+   pip install pyside6
