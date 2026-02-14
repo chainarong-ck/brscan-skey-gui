@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=BRScan SKey GUI
+Comment=GUI for Brother Scanner brscan-skey configuration
+Exec=brscan-skey-gui
+Icon=scanner
+Terminal=false
+Type=Application
+Categories=Utility;Settings;System;
+Keywords=Scanner;Brother;Config;
